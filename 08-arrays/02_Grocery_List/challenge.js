@@ -1,9 +1,10 @@
-module.exports.addItem = function(item, arr) {
-    var table = [...new Set(arr.push(item))];
-    return table;
+module.exports.addItem = function (item, arr) {
+    if(arr.indexOf(item) == -1) {
+        arr.push(item);
+    }
+    return arr;
 }
 
 module.exports.reverseSortedList = function(arr) {
-    return arr.sort(function(a, b){return b - a});
-} 
-
+    return  arr.sort().reverse();
+}
