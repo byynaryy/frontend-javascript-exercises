@@ -1,4 +1,12 @@
-module.exports.createCourse = undefined;
+module.exports.createCourse = function(title, duration, students) {
+    var course = {
+        "title": title,
+        "duration": duration,
+        "students": students
+    };
+    return course;
+}
+
 
 module.exports.addProperty = undefined;
 
