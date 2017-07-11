@@ -9,12 +9,10 @@ module.exports.createCourse = function(title, duration, students) {
 
 
 module.exports.addProperty = function(obj, newProp, newValue) {
-    if(obj.hasOwnProperty(newProp)) {
-        return obj
-    }else {
+    if(!obj.hasOwnProperty(newProp)) {
         obj[newProp] = newValue;
-        return obj;
     }
+    return obj;
 } 
 
 
