@@ -1,5 +1,9 @@
-module.exports.getKeys = undefined;
+module.exports.getKeys = function(obj) {
+    return Object.keys(obj);
+}
 
-module.exports.getValues = undefined;
+module.exports.getValues = function(obj) {
+    return Object.values(obj);
+}
 
 module.exports.objectToArray = undefined;
